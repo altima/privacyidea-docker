@@ -13,6 +13,7 @@ ENV PRIVACYIDEA_ADMIN_USER=admin
 ENV PRIVACYIDEA_ADMIN_PASSWORD=admin
 
 COPY scripts/entrypoint.sh /sbin/entrypoint.sh
+RUN chmod +x /sbin/entrypoint.sh
 
 WORKDIR /code
 
