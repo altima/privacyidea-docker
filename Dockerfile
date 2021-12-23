@@ -26,7 +26,7 @@ RUN pip install gunicorn
 RUN pip install mysqlclient
 
 #application
-ENV PRIVACYIDEA_VERSION=3.6.2
+ENV PRIVACYIDEA_VERSION=3.6.3
 RUN pip install -r https://raw.githubusercontent.com/privacyidea/privacyidea/v${PRIVACYIDEA_VERSION}/requirements.txt
 RUN pip install privacyidea==${PRIVACYIDEA_VERSION}
 
